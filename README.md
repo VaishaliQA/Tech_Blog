@@ -6,6 +6,7 @@ This application is built completely from scratch and deployed in Heroku. This a
   ## Table of Contents 
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Deployment](#deployment)
   - [Test](#test)
   - [Tools](#tools)
   - [Technologies](#technologies)
@@ -23,16 +24,40 @@ This application is built completely from scratch and deployed in Heroku. This a
   To view database from MYSQL. <br>
   >    Run mysql -u root -p <br>
 
+
   ## Usage:
   This application will allow user can publish their blog posts and comment on other users’ posts as well. <br>
   Here, walk through video of complete application. <br>
   
 
 
+![tech-blog-app1 herokuapp com_](https://user-images.githubusercontent.com/54869821/195216538-935ad16f-c9e3-4d46-b37d-544a30f24697.png)
+
+
+![tech-blog-app1 herokuapp com_login](https://user-images.githubusercontent.com/54869821/195216561-e4eeadc4-c4c6-46aa-acfd-b8d58f3cb7c4.png)
+
+
+ 
+ ![tech-blog-app1 herokuapp com_dashboard_new](https://user-images.githubusercontent.com/54869821/195216627-842d3652-5bfc-4251-bd7e-79b43b3330be.png)
+
+ 
+ 
+ ![tech-blog-app1 herokuapp com_dashboard](https://user-images.githubusercontent.com/54869821/195216643-7778449d-f5e3-4b3b-9afa-f52947f5d553.png)
 
 
 
+![tech-blog-app1 herokuapp com_post_1](https://user-images.githubusercontent.com/54869821/195216682-ca4cae23-9eab-4ecf-b1d1-5d488baa1b87.png)
+![tech-blog-app1 herokuapp com_post_1 (1)](https://user-images.githubusercontent.com/54869821/195216700-ea83e504-72b3-48f6-8a9d-6ea521959dee.png)
 
+![tech-blog-app1 herokuapp com_ (1)](https://user-images.githubusercontent.com/54869821/195216748-61a563ea-5be7-4b18-807c-81c1777f8818.png)
+
+ ## Deployment:
+  Here is the deployment link of application on heroku.<br/>
+  <a href="https://tech-blog-app1.herokuapp.com/"> Live Application </a>
+
+
+  
+  
   ## Test:
   There are no test for this application.
   
