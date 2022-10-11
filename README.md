@@ -27,7 +27,7 @@ This application is built completely from scratch and deployed in Heroku. This a
 
   ## Usage:
   This application will allow user can publish their blog posts and comment on other users’ posts as well. <br>
-  Here, walk through video of complete application. <br>
+  Here, snapshots of complete application. <br>
   
 
 
