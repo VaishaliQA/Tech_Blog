@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Test Comment Data",
+    "content": "Can you use newspapers in art?Pablo Picasso, a famous Spanish artist, cut out pieces of stories for his collages beginning in 1912. ",
+    "user_id": 1
+  },
+  {
+    "title": "Newspaper Ipsum",
+    "content": "The Art Newspaper is a monthly print publication, with daily updates online, founded in 1990 and based in London and New York City. ",
+    "user_id": 2
+  },
+  {
+    "title": "Stone Magazine",
+    "content": "The Art Newspaper is the journal of record for the visual arts world, covering international news and events. ",
+    "user_id": 3
+  },
+  {
+    "title": "Magazine",
+    "content": "Vintage magazine cover and advertising art from the golden age of American illustration.",
+    "user_id": 4
+  },
+  {
+    "title": "Art & Craft",
+    "content": "Marbling Paint Art Kit for Kids - Arts and Crafts for Girls & Boys Ages 6-12 - Craft Kits Art Set - Best Tween Paint Gift Ideas for Kids Activities Age 4 5",
+    "user_id": 5
+  }
+]
