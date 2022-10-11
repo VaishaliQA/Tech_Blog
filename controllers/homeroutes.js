@@ -1,6 +1,8 @@
 const sequelize = require("../config/connection");
 const { Post, User, Comment } = require("../models");
 const router = require("express").Router();
+
+// get post data including comment and username
 router.get("/", (req, res) => {
   Post.findAll({
     attributes: ["id", "title", "content", "created_at"],
@@ -29,6 +31,7 @@ router.get("/", (req, res) => {
     });
 });
 
+// check session and redirect page
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/");
@@ -37,10 +40,12 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+// for new user
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
+// get data through id
 router.get("/post/:id", (req, res) => {
   Post.findOne({
     where: {
@@ -76,6 +81,8 @@ router.get("/post/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
+
+// get post data
 router.get("/posts-comments", (req, res) => {
   Post.findOne({
     where: {

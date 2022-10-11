@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 3002;
 
 const hbs = exphbs.create({ helpers });
 
+// create session and set property
 const sess = {
   secret: "Super secret secret",
   cookie: {},
@@ -25,13 +26,16 @@ const sess = {
 
 app.use(session(sess));
 
+// connect handlebars
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
+// express encode data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
+// connect to routes
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {

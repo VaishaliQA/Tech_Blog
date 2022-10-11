@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt"); // for password hasing
 const sequelize = require("../config/connection");
 
 // Create user Model

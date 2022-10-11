@@ -1,8 +1,11 @@
 const router = require("express").Router();
 const { User, Post, Comment } = require("../../models");
 
+// import module from util folder
 const withAuth = require("../../utils/auth");
 
+// Default route start from api/posts/
+// get all posts data with username and comment
 router.get("/", (req, res) => {
   console.log("======================");
   Post.findAll({
@@ -29,6 +32,8 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
+
+// get data by id
 router.get("/:id", (req, res) => {
   Post.findOne({
     where: {
@@ -63,6 +68,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
+// add new posts data.
 router.post("/", withAuth, (req, res) => {
   Post.create({
     title: req.body.title,
@@ -76,6 +82,7 @@ router.post("/", withAuth, (req, res) => {
     });
 });
 
+// update post data by id
 router.put("/:id", withAuth, (req, res) => {
   Post.update(
     {
@@ -100,6 +107,8 @@ router.put("/:id", withAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
+
+// delete post by id
 router.delete("/:id", withAuth, (req, res) => {
   Post.destroy({
     where: {
